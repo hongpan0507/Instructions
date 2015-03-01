@@ -2,7 +2,8 @@ Ubuntu tips:
 # run the programming in the background: Add & to the end of the command
 # remove everything in a folder, including non-empty folder: rm -R
 # Log in as root: sudo -s 
-# list hard drive, flash drive etc. : fdisk -l
+# list hard drive, flash drive etc. : fdisk -l; lsblk
+# list devices: hcitool dev (hci = human controllable interface)
 # change "run" to "exctutable": chmod +x .run file (chmod = change permission)
 # htop: windows version of task manager
 # jobs - list the current jobs
@@ -14,6 +15,10 @@ Ubuntu tips:
 	kill -[signal] %[number] - Send the signal [signal] to job number [number]
 	disown %[number] - disown the process(no more terminal will be owner), so command will be alive even after closing the terminal.
 # use "gnome-open" + "the name of the document" to open up files
+# trim ssd in ubuntu: @terminal: 
+	to trim: sudo fstrim -v /
+	to check status: cat /etc/cron.weekly/fstrim
+# gparted: use "hide" flag to prevent the harddrive from auto-load when insert into the computer
 
 # list network interface: lshw -c network; ifconfig; iwconfig;
 	use ifconfig device_name up; ifconfig device_name down; to turn on and off devices
@@ -38,6 +43,3 @@ Ubuntu tips:
 	yellow with black background - device
 	Pink colour - graphic image file
 	Red - Archive file
-	
-# trim ssd in ubuntu: @terminal: sudo fstrim -v /
-# gparted: use "hide" flag to prevent the harddrive from auto-load when insert into the computer
