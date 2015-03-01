@@ -1,0 +1,5 @@
+Linux only
+1. download and install the package from http://qt-project.org/
+2. Execute the following in the terminal:
+   sudo apt-get install qtbase5-dev
+3. Additional steps may be required

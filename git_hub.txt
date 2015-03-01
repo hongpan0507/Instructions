@@ -1,0 +1,29 @@
+GitHub: must be in the repository folder (i.e ECEN489-Fall2014) before using pull and push
+Always do git pull before git push
+---------------------------------------------------------------------
+git status = useful for check what is about to change
+git remote show origin = show info of the remote server
+git reset HEAD = remove file for committing
+cd = change directory
+mv = move files or rename files if in the same folder
+copy = copy files
+mkdir = make new folder
+ls = show all files in a folder
+1. git config --global user.name "NAME" = set up user name
+2. git config --global user.email "email address" = set up user email 
+3. git init "NAME" = initialize local git (must be done before using git)
+4. git clone http://username@.git URL = make a copy of the master repository d(must be done before join a repository)
+5. make change to the master repository on the local machine
+6. git add "files or folders" (or --all to add all the folders) = prepare files to be committed to the master repository on the server
+7. git commit = make changes to the local master repository
+8. git push = make changes to the master repository on the server
+9. git pull = fetch and merge changes from the master repository on the server
+10. repeat step 5 to 10 
+
+git config --global credential.helper cache
+# Set git to use the credential memory cache
+
+git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
+
+

@@ -1,0 +1,29 @@
+Steps:
+1. Place the board in the middle; tape down the board; 
+   Drill the holes if necessary; Mounting hole = 125mil; Hole spacing = 0.5 inches of increment
+2. Mill -> Initialize
+3. File Import -> auto detect file -> select the one with the correct dimension	
+4. To move imported image: option 1: select all layers and drag to the position
+						   option 2: select all layers, Edit -> offset (More precise)
+5. Check all corners of the image to make sure that the foot of  the milling head will stay in the
+   boundary of the board to prevent damage to the milling machine; 
+   Right click on the corner -> machine -> jump to cursor
+6. Layer Isolation and Rubout:
+   Isolate = define the outline of each shape on the board precisely;
+			 Use small bits to isolate to make sure rubout bits will not damage the outline
+   Rubout = Remove large area of copper 
+7. to cut the outline of board: use isolate with a 62 mill routing bit (Delete everything except the outline)
+8. Repeat step 5
+9. Mill -> Run Layer -> set the speed to move and RPM -> Jog
+   Test the depth to mill into the copper layer before Isolate and Rubout
+   Test the depth to cut the board before drill and cut
+   Speed = 20 - 25 inch/min for 11 and 20 mill bit
+		         5 inch/min for 125 mill bit to isolate
+				10 inch/min for 125 mill bit to rubout
+		   Bigger bit uses slower speed		   
+   RPM = Use default RPM; bigger bit uses slower RPM
+10. After finish the top layer: Select all layers; Edit -> Mirror
+	Flip the board on the milling table according the mirrored image
+11. For drill holes, if the correct size cannot be found, use contour router to	drill the board
+
+   

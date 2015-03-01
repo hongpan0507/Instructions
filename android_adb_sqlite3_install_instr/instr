@@ -1,0 +1,45 @@
+
+
+As an alternative (may not be secure or even good idea though) you can always upload the sqlite3 binary to /system/bin this worked for me:
+
+First lets mount /system/ to allow read/write (rw)
+
+$ adb shell
+$ su
+# mount -o remount,rw /system
+
+in another terminal change directory (cd) to where sqlite3 is and lets push it
+
+$ ls
+sqlite3
+$ adb push sqlite3 /sdcard/
+
+Now back to the other shell lets copy and change permissions of the binary
+
+# cat /sdcard/sqlite3 > /system/bin/sqlite3
+# chmod 4755 /system/bin/sqlite3
+
+Now lets mount back /system/ as read only (ro)
+
+# mount -o remount,ro /system
+
+And now we can use sqlite3 from shell:
+
+# sqlite3 /data/data/com.telly/databases/fun.db
+SQLite version 3.7.4
+Enter ".help" for instructions
+sqlite> .tables
+android_metadata  lulz               
+
+Note: I'm using the sqlite3 binary that comes with "SuperOneClickv1.6.5-ShortFuse"
+
+You can always pull sqlite3 binary from emulator:
+
+Start an emulator and then from a terminal
+
+$ adb pull /system/xbin/sqlite3
+
+If you are lazy like me you can download one right here for ICS or before or for Jelly Bean and later here
+
+Make sure to use the proper one for your Android version as you may get eloc_library[1306]: 14446 cannot locate 'sqlite3_enable_load_extension'... or similar errors on execute
+

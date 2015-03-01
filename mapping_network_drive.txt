@@ -1,0 +1,6 @@
+1. Right clink on "Computer" and choose map network drive
+2. start cmd and type in "net use" to find the full path of a remote drive (\\frigga\Shared Files)
+3. Type the following address: \\frigga.ece.tamu.edu\Shared Files\
+4. If prompted for credentials, enter
+	Username: hrg\<your HRG username>
+	Password: <your HRG password>

@@ -1,0 +1,3 @@
+Notepad ++:
+file association 
+settings > preferences > file association > Notepad (move .txt)

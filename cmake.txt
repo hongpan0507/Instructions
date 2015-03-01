@@ -1,0 +1,3 @@
+CMake:
+(Missing libgmp-10.dll)
+Add "C:\MinGW\bin" to Computer Properties > Advanced system setting > System Properties > Environment Variables > Path

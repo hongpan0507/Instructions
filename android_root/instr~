@@ -1,0 +1,47 @@
+
+
+
+Step 1 – Backup
+
+    Backup all your apps and settings. You can pick Google Sync or another similar cloud service. Asus Sync is available though not applicable to backing up programs.
+    Don’t forget:
+        Photos and Videos
+        Account information
+        Messages, Notes and Contacts
+        Applications and Settings
+        Documents, PDF, e-books
+
+ 
+Step 2 – Unlocking your Asus TF300
+
+“Again tell me why I need to unlock my Asus tablet?” A locked Android tablet won’t be able to install new firmware locking you down from installing anything at a boot level.
+
+    Download the official Unlock Asus ‘Unlock_v8.rar’ file and untar (my local copy) Unlock_v8.apk to your device internal memory.
+    Install the Asus Unlocking App and run it.
+    Follow the instructions the unlock your device and once all is done you will see your tablet reboot and display ‘This device is UnLocked’ on startup (screenshot above). That’s it, next.
+
+ 
+Step 3 – Alright the good stuff, Rooting your TF300 with Jelly Bean 4.2
+
+You’ll need the following items:
+
+    Developer mode enabled (Settings -> About -> click Build 4 times)
+    USB Debugging activated
+    Third party install enabled (settings -> Security)
+
+Let’s go:
+
+    Download this second zip package (contains a TF300 boot TWRP 2.4.4.0 version with fastboot) and unzip into your ‘C:Program FilesAsusAsus Sync’ Folder or really any other temp folder.
+    Open Cmd.exe and ‘CD’ into your Asus Sync folder where you uploaded fastboot.exe from step 1. (in picture above)
+    * Added comment from Damz -using JB 10.6.1.8 build version, use twrp version 2.4.4.0-4.4.blob, connect your USB cable to your pad and do the fastboot steps.
+    Type in Cmd: fastboot –i 0x0b05 flash recovery twrp.blob (you can run it without -i 0x0b05 also)
+    The prompt will say < waiting for device > (in picture above). At that stage restart your tablet and upon startup press ‘Volume Down and Power On’ until you see 3 images (RCK, Android, Wipe). Make sure you stay at that menu, you will see fastboot.exe connect and flash the recovery.
+    When finished type: fastboot reboot
+    DO NOT Reboot into recovery, let it boot up into its normal state at least once.
+    Download UPDATE-SuperSU-v1.34.zip and upload into your tablet’s internal memory.
+    Once you have SuperSU copied reboot with ‘Volume Down and Power On’ until you see the screen with 3 images on bootup.
+    Press ‘Volume Up’ to select Recovery (RCK) which will load TWRP.
+    Pick Install and select UPDATE-SuperSU-v1.34.zip, what it do its stuff.
+    Wipe Dalvik/Cache
+    Reboot and that’s it, you got yourself a TF300 rooted with Android 4.2
+

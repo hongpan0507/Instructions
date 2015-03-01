@@ -1,0 +1,86 @@
+Windows:
+Eclipse C/C++:
+installation
+1. Java JRE
+2. MinGW
+3. Eclipse for C/C++ developers
+4. To avoid linking problem, do the following:
+   Add "-static-libgcc -static-libstdc++" 
+   to project properties > C/C++ Build > Settings > MinGW C++ Linker > Misc
+
+---------------------------------------------------------------------------
+Linux:
+install eclipse
+@terminal:
+sudo apt-get update
+sudo apt-get install build-essential
+Extract the eclipse.XX.YY.tar.gz using
+tar -zxvf eclipse.XX.YY.tar.gz
+Become root and Copy the extracted folder to /opt
+sudo mv eclipse.XX.YY /opt
+
+Create a desktop file and install it:
+gedit eclipse.desktop
+and copy the following to the eclipse.desktop file.
+
+[Desktop Entry]
+Name=Eclipse 
+Type=Application
+Exec=env UBUNTU_MENUPROXY=0 eclipse44
+Terminal=false
+Icon=eclipse
+Comment=Integrated Development Environment
+NoDisplay=false
+Categories=Development;IDE;
+Name[en]=Eclipse
+
+then execute the following command to automatically install it in the unity:
+desktop-file-install eclipse.desktop
+Create a symlink in /usr/local/bin using
+ln -s /opt/eclipse/eclipse /usr/local/bin/eclipse44
+
+For eclipse icon to be displayed in dash, eclipse icon can be added as
+cp /opt/eclipse/icon.xpm /usr/share/pixmaps/eclipse.xpm
+
+Give eclipse the required permissions to modify the osgi file.
+sudo chown -R $USER:$USER /opt/eclipse/configuration/org.eclipse.osgi
+
+---------------------------------------------------------------------------------
+
+enable c++ 11
+Right click your project and click Properties
+Under C/C++ Build click Settings
+Under GCC C++ Compiler, click Miscellaneous
+In the Other Flags box, append "-std=c++11" to the list of tokens.
+Click Apply and OK
+
+At this point you should be able to rebuild your project and get it to run. But CDT still may show errors for C++11 includes. Here's how you can resolve that:
+
+Right click your project and click Properties
+Under C/C++ General click "Preprocessor Include Paths, Macros"
+Select the Providers tab
+There should be an item in the list that says something like "GCC Built in Compiler Settings". Select this entry.
+Uncheck the "Use global provider..." option
+Under the list there's an box that says "Command to get compiler specs." Append "-std=c++0x" to this.
+Move the "GCC Built in Compiler Settings" provider at the top of the list using the 'Move Up' button on the right.
+Click Apply and then OK.
+Back in your Eclipse workspace, select the Project Menu, C/C++ Index, and click "Re-resolve unresolved includes."
+
+-------------------------------------------------------------------
+eclipse and sqlite set up in ubuntu
+sudo apt-get install sqlite3 libsqlite3-dev
+
+In eclipse:
+    Right-click on the project, then select Properties
+    Go under C/C++ Build -> Settings
+    Select GCC C Linker -> Libraries
+    In Libraries (-l), add the name of your libraries, (in this case: add sqlite3)
+    If needed, put the directory where your libraries are hosted in Library search path (-L).
+
+-----------------------------------------------------------------------------------
+import CMake project
+1. File > New > MakeFile Project with existing code
+2. Name the project and Give CMake Folder as "Existing Code Location"
+3. Select MinGW GCC (different for different compilers)
+4. 
+helpful link: http://choorucode.com/2014/01/15/how-to-create-eclipse-project-from-cmake-project/
