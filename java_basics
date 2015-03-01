@@ -1,0 +1,4 @@
+CLASSPATH
+	To display: echo $CLASSPATH
+	To delete:  unset CLASSPATH; export CLASSPATH
+	To set: CLASSPATH=/home/hpan/java/classes; export CLASSPATH
