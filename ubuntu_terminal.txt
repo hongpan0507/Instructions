@@ -1,32 +1,43 @@
 Ubuntu tips:
-1. run the programming in the background: Add & to the end of the command
-2. change the size of a window: ctrl + windown key + arrow key
-3. change "run" to "exctutable": chmod +x .run file (chmod = change permission)
-4. htop: windows version of task manager
-5.  jobs - list the current jobs
-    fg - resume the job that's next in the queue
-    fg %[number] - resume job [number]
-    bg - Push the next job in the queue into the background
-    bg %[number] - Push the job [number] into the background
-    kill %[number] - Kill the job numbered [number]
-    kill -[signal] %[number] - Send the signal [signal] to job number [number]
-    disown %[number] - disown the process(no more terminal will be owner), so command will be 	  alive even after closing the terminal.
-6. use "gnome-open" + "the name of the document" to open up files
-7. Log in as root: sudo -s 
-8. list hard drive, flash drive etc. : fdisk -l
-9. list network interface: lshw -c network
-10. Advanced Package Tool: apt (apt-get; apt-get install)
-11. Tar ball: tar -xf first; then ./configure; make; make install
-12. install EXE file: use “unzip -a” and then install using INF file found in the driver.
-13. Install .deb using Debian package manager: dpkg -i
-14. download from web: wget
-15. if GUI doesn't load: dconf reset -f /org/compiz/	then: unity –reset-icons &disown
-16. remove everything in a folder, including non-empty folder: rm -R
-17. Meaning of different color on the terminal
+# run the programming in the background: Add & to the end of the command
+# remove everything in a folder, including non-empty folder: rm -R
+# Log in as root: sudo -s 
+# list hard drive, flash drive etc. : fdisk -l
+# change "run" to "exctutable": chmod +x .run file (chmod = change permission)
+# htop: windows version of task manager
+# jobs - list the current jobs
+	fg - resume the job that's next in the queue
+	fg %[number] - resume job [number]
+	bg - Push the next job in the queue into the background
+	bg %[number] - Push the job [number] into the background
+	kill %[number] - Kill the job numbered [number]
+	kill -[signal] %[number] - Send the signal [signal] to job number [number]
+	disown %[number] - disown the process(no more terminal will be owner), so command will be alive even after closing the terminal.
+# use "gnome-open" + "the name of the document" to open up files
+
+# list network interface: lshw -c network; ifconfig; iwconfig;
+	use ifconfig device_name up; ifconfig device_name down; to turn on and off devices
+	
+# Advanced Package Tool: apt
+	apt-get
+	apt-get install
+	apt-get update	(update repo list)
+	apt-get upgrade	(apply changes)
+	apt-cache search (search for packages in the repo)
+# To install from tar ball: tar -xvf first; then ./configure; make; make install
+# install EXE file: use “unzip -a” and then install using INF file found in the driver.
+# Install .deb using Debian package manager: dpkg -i
+# download from web: wget
+
+# if GUI doesn't load: dconf reset -f /org/compiz/	then: unity –reset-icons &disown
+
+# Meaning of different color on the terminal
 	Blue color - Directory
 	Green color - Executable or recognized data file
 	Sky Blue Color - Linked file
 	yellow with black background - device
 	Pink colour - graphic image file
 	Red - Archive file
-18. trim ssd in ubuntu: @terminal: sudo fstrim -v /
+	
+# trim ssd in ubuntu: @terminal: sudo fstrim -v /
+# gparted: use "hide" flag to prevent the harddrive from auto-load when insert into the computer
