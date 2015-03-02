@@ -1,8 +1,5 @@
 1. start up remote desktop connection
-2. computer name = muninn.ece.tamu.edu
-3. user name = domain\username = hrg\hpan
+2. computer name = ComputerName.ece.tamu.edu
+3. user name = domain\username = hrg\UserName
 4. type in password and save the connection
 
-available computer names:
-heracles.ece.tamu.edu
-vidar.ece.tamu.edu
