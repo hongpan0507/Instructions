@@ -2,6 +2,9 @@ Ubuntu tips:
 # run the programming in the background: Add & to the end of the command
 # remove everything in a folder, including non-empty folder: rm -R
 # Log in as root: sudo -s 
+# Fix broken package: 
+	sudo apt-get -f install
+	sudo apt-get update -f
 # list hard drive, flash drive etc. : fdisk -l; lsblk
 # list devices: hcitool dev (hci = human controllable interface)
 # change "run" to "exctutable": chmod +x .run file (chmod = change permission)
