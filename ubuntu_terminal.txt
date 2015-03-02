@@ -36,6 +36,7 @@ Ubuntu tips:
 # install EXE file: use “unzip -a” and then install using INF file found in the driver.
 # Install .deb using Debian package manager: dpkg -i
 # download from web: wget
+# add PPA to the repo: sudo add-apt-repository ppa:<ppa_name>
 
 # if GUI doesn't load: dconf reset -f /org/compiz/	then: unity –reset-icons &disown
 
