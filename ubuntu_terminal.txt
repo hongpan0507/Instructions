@@ -3,8 +3,13 @@ Ubuntu tips:
 # remove everything in a folder, including non-empty folder: rm -R
 # Log in as root: sudo -s 
 # Fix broken package: 
+	sudo apt-get update
+	sudo apt-get autoremove
+	sudo apt-get clean
+	sudo apt-get check
+	sudo dpkg --configure -a
 	sudo apt-get -f install
-	sudo apt-get update -f
+	sudo apt-get update
 # list hard drive, flash drive etc. : fdisk -l; lsblk
 # list devices: hcitool dev (hci = human controllable interface)
 # change "run" to "exctutable": chmod +x .run file (chmod = change permission)
