@@ -5,4 +5,5 @@
   4. higher priority number gives higher priority
   5. priority must be different when create for the first time between different zones
   
-#  
+#  Add footprint library 
+  1. https://lists.launchpad.net/kicad-developers/msg12945.html
