@@ -1,0 +1,8 @@
+# Add multiple copper fill zone
+  1. create 1st zone outline
+  2. set the priority to the lowest (= 0)
+  3. zone priority determines which zone is to be filled up first 
+  4. higher priority number gives higher priority
+  5. priority must be different when create for the first time between different zones
+  
+#  
