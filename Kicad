@@ -6,4 +6,6 @@
   5. priority must be different when create for the first time between different zones
   
 #  Add footprint library 
-  1. https://lists.launchpad.net/kicad-developers/msg12945.html
+  1. In PCB layout or footprint editor: Preferences->library tables->append with wizard->KiCad
+    ->Use path relative to the project->Add FP Libraries->select all the folders (.pretty) that contatins the footprint
+  2. Instruction to set environmental path and more: https://lists.launchpad.net/kicad-developers/msg12945.html
