@@ -1,4 +1,22 @@
-# Add multiple copper fill zone
+# Make any shape of footprint on any layer
+  1. Use a image editor program to draw the shape
+  2. Save the image as bitmap file format (BMP or PNG)
+  3. Open "Bitmap2Componet" from Kicad control Pane
+  4. "Load Bitmap"
+  5. Click on "Black&White Picture" tab
+  6. Change the Threshold Value if the shape does not appear
+  7. In "Options", "Normal" = no change to the orignal shape, "Negative" = invert the colors (Black to white, White to black)
+  8. The "black shape" = keep-out, the "white shape" = the shape shows up in kicad footprint editor
+  9. Select "Format" as "Pcbnew(.kicad_modfile)"
+  10. Click on "Export", save the library file to a ".pretty" folder (footprint library folder)
+  11. Load the component to double check the size, shape and resolution
+  12. To change the shape to any layer, load exported file to a text editor, change "layer" to any desired layer
+  Note: in "Bitmap2component"
+    1. Do not change Resolution; it scales the image if changed
+    2. if higher resolution is needed, increase the size of pixels while maintain the physical dimension of the shape in the image editor
+    3. Only "From silk screen" and "From solder mask" are available from "Bitmap2Component", but the shape can be put onto any layer by manually edit the exported file with text editor
+  
+# Add multiple copper fill zones
   1. create 1st zone outline
   2. set the priority to the lowest (= 0)
   3. zone priority determines which zone is to be filled up first 
@@ -16,6 +34,7 @@
     3. Click on the starting point of the keep-out zone
     4. Fill out "Non Copper Zones Properties"
     5. This method works for all non-copper layer
+    
 # Add footprint library 
   1. In PCB layout or footprint editor: Preferences->library tables->append with wizard->KiCad
     ->Use path relative to the project->Add FP Libraries->select all the folders (.pretty) that contatins the footprint
