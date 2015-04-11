@@ -1,5 +1,5 @@
 # Make any shape of footprint on any layer
-  1. Use an image editor program to draw the shape
+  1. Use an image editor (Inkscape etc.)to draw the shape
   2. Save the image as bitmap file format (BMP or PNG)
   3. Open "Bitmap2Componet" from Kicad control Pane
   4. "Load Bitmap"
