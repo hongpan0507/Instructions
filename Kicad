@@ -5,6 +5,17 @@
   4. higher priority number gives higher priority
   5. priority must be different when create for the first time between different zones
   
+# Keep-out zone for Solder Mask Layer
+  Option A: Use Solder Mask Layer as Keep-out layer in Footprinter Editor
+    1. In Footprint Editor, select Solder Mask Layer
+    2. Make the desired pattern
+    3. The pattern is the keep-out zone.
+  Option B: Use fill zone as keep-out zone in Pcbnew (PCB routing)
+    1. Select Solder Mask Layer
+    2. Select "Add filled zone"
+    3. Click on the starting point of the keep-out zone
+    4. Fill out "Non Copper Zones Properties"
+    5. This method works for all non-copper layer
 #  Add footprint library 
   1. In PCB layout or footprint editor: Preferences->library tables->append with wizard->KiCad
     ->Use path relative to the project->Add FP Libraries->select all the folders (.pretty) that contatins the footprint
