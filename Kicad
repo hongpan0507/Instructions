@@ -39,3 +39,7 @@
   1. In PCB layout or footprint editor: Preferences->library tables->append with wizard->KiCad
     ->Use path relative to the project->Add FP Libraries->select all the folders (.pretty) that contatins the footprint
   2. Instruction to set environmental path and more: https://lists.launchpad.net/kicad-developers/msg12945.html
+
+# turn off "invisible text"
+  1. In Pcbnew (layout), Click on "Render" on the right hand size, next to "layer" tab, uncheck "hidden text"
+  2. All the layer, footprint, via etc can be set invisible
