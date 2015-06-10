@@ -34,7 +34,15 @@
     3. Click on the starting point of the keep-out zone
     4. Fill out "Non Copper Zones Properties"
     5. This method works for all non-copper layer
-    
+
+# Change global or default thermal relief setting for pads
+  1. In "Pad Properties"->"Local Clearance and setting"->"Copper Zones", Choose "Thermal Relief" for "Pad connection".
+  2. Set Values for "Thermal Relife width" and "Thermal Relife gap"; if "0" is used, it will use the global value instead
+  3. To change the global value,"Edit copper zone properties"->"Pad Connection", choose "Thermal Relief"; 
+     "Antipad clearance" = "Thermal Relife gap"
+     "Spoke width" = "Thermal Relife width"
+  4. Change "Pad connection" back to "solid" if only specific pads are required to have thermal relief
+        
 # Add footprint library 
   1. In PCB layout or footprint editor: Preferences->library tables->append with wizard->KiCad
     ->Use path relative to the project->Add FP Libraries->select all the folders (.pretty) that contatins the footprint
