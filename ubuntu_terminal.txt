@@ -68,4 +68,4 @@ Ubuntu tips:
 		Name[en]=Arduino
 		Name[en_US]=Arduino 1.0.6
 	Run .desktop using "sudo desktop-file-install file_name.desktop"	
-	
+	Note: All .desktop file will be installed at "/usr/share/applications"
