@@ -54,3 +54,18 @@ Ubuntu tips:
 	Red - Archive file
 # Copy and Paste in Terminal
 	ctrl-shift-c and ctrl-shift-v
+#Install .desktop file
+	Edit .desktop accoording to the following:
+		[Desktop Entry]
+		Name=Arduino 1.0.6
+		Type=Application
+		Exec=/opt/arduino-1.0.6/arduino
+		Terminal=false
+		Icon=/opt/arduino-1.0.6/logo.png
+		Comment=Integrated Development Environment
+		NoDisplay=false
+		Categories=Development;IDE;
+		Name[en]=Arduino
+		Name[en_US]=Arduino 1.0.6
+	Run .desktop using "sudo desktop-file-install file_name.desktop"	
+	
