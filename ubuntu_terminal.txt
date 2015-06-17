@@ -54,7 +54,7 @@ Ubuntu tips:
 	Red - Archive file
 # Copy and Paste in Terminal
 	ctrl-shift-c and ctrl-shift-v
-#Install .desktop file
+# Install .desktop file
 	Edit .desktop accoording to the following:
 		[Desktop Entry]
 		Name=Arduino 1.0.6
@@ -69,3 +69,11 @@ Ubuntu tips:
 		Name[en_US]=Arduino 1.0.6
 	Run .desktop using "sudo desktop-file-install file_name.desktop"	
 	Note: All .desktop file will be installed at "/usr/share/applications"
+# Change ownership of a file
+	Use chown to change ownership and chmod to change rights
+	sudo chown -R username:group directory
+	Note: will change ownership (both user and group) of all files inside of directory
+	sudo chown username:group directory
+	Note: will only change the permission of the folder directory
+	Ex: sudo chown -R hpan:hpan
+	
