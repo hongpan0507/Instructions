@@ -52,3 +52,5 @@ Ubuntu tips:
 	yellow with black background - device
 	Pink colour - graphic image file
 	Red - Archive file
+# Copy and Paste in Terminal
+	ctrl-shift-c and ctrl-shift-v
