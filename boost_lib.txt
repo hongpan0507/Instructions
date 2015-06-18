@@ -1,3 +1,7 @@
+#install boost from ubuntu termial:
+  sudo apt-get install libboost-all-dev
+#install previous version of boost if current version doesn't work
+  ex. sudo apt-get install libboost1.55-all-dev
 #boost installation folder on ubuntu:
   /usr/include/boost
 
