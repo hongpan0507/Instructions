@@ -1,9 +1,11 @@
-1.boost installation folder on ubuntu:
+#boost installation folder on ubuntu:
   /usr/include/boost
 
-2. link "boost_system", "pthread", and "boost_thread"
-eclipse with gcc compiler: project > properties > c/c++ build > settings > tool settings > gcc c++ linker > library: add "boost_system" and "pthread"without quotation mark; add library if neccessary
+#link "boost_system", "pthread", and "boost_thread"
+  eclipse with gcc compiler: project > properties > c/c++ build > settings > tool settings > gcc c++ linker > library   add "boost_system" and "pthread"without quotation mark; add library if neccessary
 
-3. add "/usr/include/boost" to the include
-eclipse with gcc compiler: project > properties > c/c++ general > paths and symbols > includes > GNU C++
+#add "/usr/include/boost" to the include
+  eclipse with gcc compiler: project > properties > c/c++ general > paths and symbols > includes > GNU C++
 
+#to find boost installation location
+  execute "locate boost" in the terminal
