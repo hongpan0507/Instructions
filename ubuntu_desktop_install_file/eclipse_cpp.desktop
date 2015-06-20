@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=eclipse_cpp
+Type=Application
+Exec=/opt/eclipse_cpp/eclipse
+Terminal=false
+Icon=/opt/eclipse_cpp/logo.png
+Comment=Integrated Development Environment
+NoDisplay=false
+Categories=Development;IDE;
+Name[en]=eclipse_cpp
+Name[en_US]=eclipse_cpp

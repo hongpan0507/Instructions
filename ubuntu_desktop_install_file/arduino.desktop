@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Arduino 1.0.5
+Type=Application
+Exec=gksudo -k -u root /opt/arduino-1.0.5/arduino 
+Terminal=false
+Icon=/opt/arduino-1.0.6/logo.jpg
+Comment=Integrated Development Environment
+NoDisplay=false
+Categories=Development;IDE;
+Name[en]=Arduino 1.0.5
+Name[en_US]=arduino
