@@ -42,6 +42,10 @@
      "Antipad clearance" = "Thermal Relife gap"
      "Spoke width" = "Thermal Relife width"
   4. Change "Pad connection" back to "solid" if only specific pads are required to have thermal relief
+
+#Pad clearance setting
+  1. Right click on the footprint -> "Edit Footprint Parameters" -> "Pad Clearance"; It only sets the clearance locally.
+  2. Setting pad clearance globally, Not found yet
         
 # Add footprint library 
   1. In PCB layout or footprint editor: Preferences->library tables->append with wizard->KiCad
