@@ -43,7 +43,7 @@
      "Spoke width" = "Thermal Relife width"
   4. Change "Pad connection" back to "solid" if only specific pads are required to have thermal relief
 
-#Pad clearance setting
+# Pad clearance setting
   1. Right click on the footprint -> "Edit Footprint Parameters" -> "Pad Clearance"; It only sets the clearance locally.
   2. Setting pad clearance globally, Not found yet
         
@@ -51,6 +51,15 @@
   1. In PCB layout or footprint editor: Preferences->library tables->append with wizard->KiCad
     ->Use path relative to the project->Add FP Libraries->select all the folders (.pretty) that contatins the footprint
   2. Instruction to set environmental path and more: https://lists.launchpad.net/kicad-developers/msg12945.html
+
+# 3D module
+  1. Kicad variable environment sets the location where the 3d module is saved.
+  2. The default kicad variable environment will most likely not going to work.
+  3. To create or change in Windows, "System Properties" -> "Advanced" -> "Environment Variables" -> "System Vairables",
+     create a new one if the variable name "KISYS3DMOD" and "KISYSMOD" do not exist, the value of the variable is the path
+     which points to the folder where 3D module is saved.
+  4. Restart of the PC maybe required.
+  5. More info and Linux setting: https://lists.launchpad.net/kicad-developers/msg12945.html
 
 # turn off "invisible text"
   1. In Pcbnew (layout), Click on "Render" on the right hand size, next to "layer" tab, uncheck "hidden text"
