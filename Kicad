@@ -60,6 +60,13 @@
      which points to the folder where 3D module is saved.
   4. Restart of the PC maybe required.
   5. More info and Linux setting: https://lists.launchpad.net/kicad-developers/msg12945.html
+  
+# Build and add 3D module for a footprint
+  1. Create or download 3d module (stl, step files)
+  2. Open up using solidworks; adjust color, dimension, and rotation if necessary
+  3. save as .wrl file; click on the "option", and make sure the unit is in "mm"
+  4. In the kicad footprint editor, click on footprint property, 3d shape setting, add the 3d shape in wrl format
+  5. set the scaling to 1/2.54; (1inch/2.54cm)
 
 # turn off "invisible text"
   1. In Pcbnew (layout), Click on "Render" on the right hand size, next to "layer" tab, uncheck "hidden text"
