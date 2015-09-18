@@ -1,7 +1,8 @@
 # Automatic components placement/move
   1. Select "Mode footprint" button on the top tool bar
-  2. Right click on the footprint and select "Global Spread and place" -> "automatically place all footprints"
-  3. Right click on the footprint and select "Automatically place footprint"
+  2. Right click on the footprint and select "Global Spread and place" -> "Spread out all footprints" or
+  3. Right click on the footprint and select "Global Spread and place" -> "automatically place all footprints" or
+  4. Right click on the footprint and select "Automatically place footprint"
   
 # Make any shape of footprint on any layer
   1. Use an image editor (Inkscape etc.)to draw the shape; if shape is in black, white background is required; or vice versa
