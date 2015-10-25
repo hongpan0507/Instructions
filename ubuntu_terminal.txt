@@ -76,4 +76,5 @@ Ubuntu tips:
 	sudo chown username:group directory
 	Note: will only change the permission of the folder directory
 	Ex: sudo chown -R hpan:hpan
+	More Ex. sudo chmod 666 /dev/ttyACM0; sudo chmod a+rw /dev/ttyACM0
 	
