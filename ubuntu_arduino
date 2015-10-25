@@ -1,0 +1,3 @@
+#give arduino permission to access to serial port under ubuntu
+  1. sudo chmod 666 /dev/ttyACM0; or sudo chmod a+rw /dev/ttyACM0; (ttyACM0 = serial port)
+  2. permanent solution: sudo usermod -a -G dialout name; (change name to the user name; ex. hpan)
