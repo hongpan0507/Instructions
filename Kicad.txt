@@ -77,3 +77,6 @@
 # turn off "invisible text"
   1. In Pcbnew (layout), Click on "Render" on the right hand size, next to "layer" tab, uncheck "hidden text"
   2. All the layer, footprint, via etc can be set invisible
+  
+# plugin location
+  1. "C:\Program Files\KiCad\share\kicad\scripting\plugins"
