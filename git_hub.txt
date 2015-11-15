@@ -26,4 +26,9 @@ git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 # Set the cache to timeout after 1 hour (setting is in seconds)
 
-
+#download specific folder from github
+  1. On Github: Locate the Github path to your git folder (not the repo) by clicking the specific folder name within a repo        Copy the path from the address bar of the browser
+  2. Open Terminal and type: svn export
+  3. Next paste in the address (eg.): https://github.com/mingsai/Sample-Code/tree/master/HeadsUpUI
+  4. Replace the words: tree/master with the word: trunk
+  5. http://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo
