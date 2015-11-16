@@ -66,6 +66,10 @@
      which points to the folder where 3D module is saved.
   4. Restart of the PC maybe required.
   5. More info and Linux setting: https://lists.launchpad.net/kicad-developers/msg12945.html
+  6. Many 3D models can be downloaded from the web.
+      Examples: http://www.3dcontentcentral.com/Default.aspx
+                https://grabcad.com
+                Manufacture Website
   
 # Build and add 3D module for a footprint
   1. Create or download 3d module (stl, step files)
