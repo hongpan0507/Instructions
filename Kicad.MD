@@ -31,7 +31,8 @@ Tri-state is an output that can drive high or low, but can also be placed in a h
   9. Select "Format" as "Pcbnew(.kicad_modfile)"
   10. Click on "Export", save the library file to a ".pretty" folder (footprint library folder)
   11. Load the component to double check the size, shape and resolution
-  12. To change the shape to any layer, load exported file to a text editor, change "layer" to any desired layer
+  12. To change the shape to any layer, load exported file to a text editor, change "layer" to any desired layer  
+    
   Note: in "Bitmap2component"
     1. Do not change Resolution; it scales the image if changed
     2. if higher resolution is needed, increase the number of pixels while maintain the physical dimension of the shape in the image editor
