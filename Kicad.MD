@@ -70,7 +70,7 @@ Tri-state is an output that can drive high or low, but can also be placed in a h
   2. Setting pad clearance globally, Not found yet
         
 ## Add footprint library 
-  1. In PCB layout or footprint editor: Preferences->library tables->append with wizard->KiCad
+  1. In PCB layout or footprint editor: Preferences->Footprint Library Manager->append with wizard->KiCad
     ->Use path relative to the project->Add FP Libraries->select all the folders (.pretty) that contatins the footprint
   2. Instruction to set environmental path and more: https://lists.launchpad.net/kicad-developers/msg12945.html
 
