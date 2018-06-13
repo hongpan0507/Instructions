@@ -77,7 +77,7 @@ Tri-state is an output that can drive high or low, but can also be placed in a h
 # 3D output
 ## 3D module
   1. Kicad variable environment sets the location where the 3d module is saved.
-  2. The default kicad variable environment will most likely not going to work.
+  2. The default kicad variable environment is most likely not going to work.
   3. To create or change in Windows, "System Properties" -> "Advanced" -> "Environment Variables" -> "System Vairables",
      create a new one if the variable name "KISYS3DMOD" and "KISYSMOD" do not exist, the value of the variable is the path
      which points to the folder where 3D module is saved.
